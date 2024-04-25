@@ -1,0 +1,220 @@
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+table {
+  /* Table layout and borders */
+  border-collapse: collapse; /* Remove default cell spacing */
+  width: 600px; /* Optional: Set a fixed width or use percentages */
+  margin: 10vh auto; /* Center the table horizontally */
+  font-family: Arial, sans-serif; /* Set a preferred font family */
+}
+
+th, td {
+  /* Cell padding and borders */
+  padding: 10px 20px; /* Adjust padding for desired spacing */
+  border: 1px solid #ddd; /* Light gray border */
+  text-align: left; /* Left-align content by default */
+}
+
+th {
+  /* Header row styling */
+  background-color: #f2f2f2; /* Light gray background for headers */
+  font-weight: bold; /* Bold text for headers */
+}
+
+tbody tr:nth-child(even) {
+  /* Alternate row background color (optional) */
+  background-color: #eee;
+}
+
+/* Optional: Additional styling for hover effects, etc. */
+th:hover, td:hover {
+  background-color: #e0e0e0; /* Light gray background on hover */
+  cursor: pointer; /* Hand cursor on hover */
+}
+
+/* / add user styling  */
+/* Style the base button */
+.add-user-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db; /* Adjust background color as desired */
+  text-decoration: none; /* Remove underline from link */
+  cursor: pointer; /* Hand cursor on hover */
+  margin-bottom: 2rem;
+}
+
+/* Animation on hover */
+.add-user-btn:hover {
+  animation: button-hover 0.5s ease-in-out;
+}
+
+/* Define the animation (replace with your preferred animation) */
+@keyframes button-hover {
+  from {
+    transform: scale(1); /* Start at normal size */
+    color:chartreuse
+  }
+  to {
+    transform: scale(1.08); /* Increase size slightly on hover */
+    background-color: #2980b9; /* Adjust hover background color */
+    color:chartreuse
+  }
+}
+ 
+.user-action-btn {
+  display: inline-block;
+  padding: 6px 12px; /* Adjust padding for desired size */
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #fff;
+  text-align: center; /* Center text within button */
+  text-decoration: none; /* Remove underline from link for Update button */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+ margin: 0 5px;
+}
+
+/* Update User button styles */
+.update {
+  background-color: #2ecc71; /* Green */
+}
+
+.update:hover {
+  background-color: #559e7b; /* Darker green on hover */
+}
+
+/* Delete User button styles */
+.delete {
+  background-color: #e74c3c; /* Red */
+}
+
+.delete:hover {
+  background-color: #f58505; /* Darker red on hover */
+}
+
+
+/* form styling 
+ */
+ /* Form container */
+.update-user-form {
+  width: 400px; /* Adjust width as needed */
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif; /* Use Roboto for the form container */
+}
+
+/* Heading */
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif; /* Use Poppins for the heading */
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-family: "Roboto", sans-serif; /* Use Roboto for input fields */
+}
+
+/* Submit button */
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2ecc71; /* Green */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif; /* Use Poppins for the submit button */
+  margin: 5px auto;
+}
+
+.submit-btn:hover {
+
+  background-color: #2aab6c; /* Darker green on hover */
+}
+/* Style for search input */
+.form-control {
+  border-radius: 0;
+}
+
+/* Style for add user button */
+.add-user-btn {
+  border-radius: 0;
+}
+
+/* Adjust spacing between button and search input */
+.input-group-append {
+  margin-left: -1px;
+}
+/* .position_fixed{
+  margin: 22rem 4rem -9rem 22rem;
+    width: 52%;
+    padding: 1rem 0rem 1rem 1rem;
+    position: absolute;
+    top: -17rem;
+} */
+.input-group {
+  display: flex; /* Makes elements display in a row */
+  flex-direction: column;
+  text-align: center;
+  width: 100%; /* Ensures the group fills the available width */
+}
+
+.form-control {
+  flex: 1; /* Makes the input box take up most of the space */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Optional border styling */
+}
+.nav_position_fix{
+  margin: 5rem 0rem -3rem 34rem;
+}
+.btn {
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  /* Optional styling for button (e.g., background color, hover effects) */
+}
+@media (max-width: 768px) {
+  /* Center the column for small devices */
+  .col-md-6 {
+    text-align: center;
+  }
+}

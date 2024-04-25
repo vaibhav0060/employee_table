@@ -1,0 +1,96 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling for large datasets */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold; /* Add bold weight to headers */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .action-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px; /* Consistent margin for better spacing */
+  
+    /* Basic color scheme (replace with your preferred colors) */
+    background-color: #f0f0f0;
+    color: #333;
+  
+    /* Optional gradient for a more attractive look */
+    background-image: linear-gradient(to bottom, #f0f0f0 0%, #e0e0e0 100%);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media queries for improved responsiveness */
+  @media (max-width: 1024px) {
+    /* Adjust breakpoint as needed for tablet layouts */
+    table {
+      display: block;
+      overflow: auto;
+    }
+  
+    th,
+    td {
+      white-space: nowrap; /* Prevent text wrapping on smaller screens */
+    }
+  
+    tr {
+      display: flex;
+      flex-wrap: wrap;
+      line-height: 2; /* Adjust line height for better readability */
+    }
+  
+    th {
+      flex: 1 0 0%; /* Force equal width for headers on small screens */
+    }
+  
+    td {
+      flex: 2 0 0%; /* Allow more space for content on small screens */
+    }
+  
+    .action-button {
+      display: block; /* Display buttons vertically on smaller screens */
+      margin: 5px auto; /* Center buttons horizontally */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust breakpoint for mobile layouts */
+    .search-input {
+      font-size: 0.8rem; /* Reduce font size for input on mobile */
+    }
+  
+    th,
+    td {
+      font-size: 0.8rem; /* Reduce font size for content on mobile */
+    }
+  }
+  
